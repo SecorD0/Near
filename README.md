@@ -22,7 +22,7 @@
 - [Hardforks](#Hardforks)
   - [27.07.22](#270722)
   - [21.07.22](#210722)
-- [Actions](#Actions)
+  - [Actions](#Actions)
 - [Useful commands](#Useful-commands)
 - [Useful links](#Useful-links)
 - [1package](#1package)
