@@ -62,7 +62,8 @@ main() {
 		local t_nv="Версия ноды:                ${C_LGn}%s${RES}"
 		local t_lb="Последний блок:             ${C_LGn}%s${RES}"
 		local t_sy1="Нода синхронизирована:      ${C_LR}нет${RES}"
-		local t_sy2="Нода синхронизирована:      ${C_LGn}да${RES}"
+		local t_sy2="Осталось нагнать:           ${C_LR}%d-%d=%d${RES}"
+		local t_sy3="Нода синхронизирована:      ${C_LGn}да${RES}"
 		
 		local t_vai="\nAccount ID валидатора:      ${C_LGn}%s${RES}"
 		local t_eu="Страница в эксплорере:      ${C_LGn}%s${RES}"
@@ -84,7 +85,8 @@ main() {
 		local t_nv="Node version:                 ${C_LGn}%s${RES}"
 		local t_lb="Latest block height:          ${C_LGn}%s${RES}"
 		local t_sy1="Node is synchronized:         ${C_LR}no${RES}"
-		local t_sy2="Node is synchronized:         ${C_LGn}yes${RES}"
+		local t_sy2="It remains to catch up:       ${C_LR}%d-%d=%d${RES}"
+		local t_sy3="Node is synchronized:         ${C_LGn}yes${RES}"
 		
 		local t_vai="\nValidator Account ID:         ${C_LGn}%s${RES}"
 		local t_eu="Page in explorer:             ${C_LGn}%s${RES}"
@@ -151,9 +153,11 @@ main() {
 		printf_n "$t_nv" "$node_version"
 		printf_n "$t_lb" "$latest_block_height"
 		if [ "$syncing" = "true" ]; then
-			printf_n "$t_sy1"	
+			local diff=`bc -l <<< "$current_block-$latest_block_height"`
+			printf_n "$t_sy1"
+			printf_n "$t_sy2" "$current_block" "$latest_block_height" "$diff"	
 		else
-			printf_n "$t_sy2"
+			printf_n "$t_sy3"
 		fi
 		
 		printf_n "$t_vai" "$validator_account_id"
