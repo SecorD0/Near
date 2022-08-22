@@ -26,7 +26,7 @@
 - [Useful commands](#Useful-commands)
 - [Useful links](#Useful-links)
 - [1package](#1package)
-- [Acknowledgments](#Acknowledgments)
+- [Express your gratitude](#Express-your-gratitude)
 
 
 
