@@ -37,6 +37,7 @@
 
 ⠀Suitable servers:
 - [Hetzner — DS AX41](https://hetzner.cloud/?ref=VLYST6YYvi30) (€40.5)
+- [Mevspace — AMD® Ryzen™ 5 3600](https://mevspace.com/dedicated) (€51.5)
 - [Contabo — VPS L](https://contabo.com/en/vps/vps-l-ssd/?image=ubuntu.267&qty=1&contract=1&storage-type=vps-l-800-gb-ssd) (€15)
 
 
