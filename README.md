@@ -36,8 +36,8 @@
 ⠀Minimal (VPS/VDS/DS): 4 CPU, 8 GB RAM, 500 GB SSD, Ubuntu 20.04
 
 ⠀Suitable servers:
-- [Hetzner — CPX21, DS AX41](https://hetzner.cloud/?ref=VLYST6YYvi30)
-- [Contabo — VPS L](https://contabo.com/en/vps/vps-l-ssd/?image=ubuntu.267&qty=1&contract=1&storage-type=vps-l-800-gb-ssd)
+- [Hetzner — DS AX41](https://hetzner.cloud/?ref=VLYST6YYvi30) (€40.5)
+- [Contabo — VPS L](https://contabo.com/en/vps/vps-l-ssd/?image=ubuntu.267&qty=1&contract=1&storage-type=vps-l-800-gb-ssd) (€15)
 
 
 
