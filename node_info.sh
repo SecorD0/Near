@@ -162,12 +162,12 @@ main() {
 		
 		printf_n "$t_vai" "$validator_account_id"
 		printf_n "$t_eu" "$explorer_url"
-		if [ -n "$validator_current_epoch" ]; then
+		if [ "$validator_current_epoch" = "true" ]; then
 			printf_n "$t_ace1"
 		else
 			printf_n "$t_ace2"
 		fi
-		if [ -n "$validator_next_epoch" ]; then
+		if [ "$validator_next_epoch" = "true" ]; then
 			printf_n "$t_ane1"
 		else
 			printf_n "$t_ane2"
